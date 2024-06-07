@@ -5,3 +5,79 @@
   font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
     "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
 }
+
+body {
+  /* background-image: url("/bg.jpg"); */
+  /* background-repeat: none;
+  background-size: cover; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  color: white; 
+  background: linear-gradient(to bottom, lightblue, white);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+.container {
+  width: 80vw;
+  height: 90vh;
+  background-color: rgba(17, 25, 40, 0.45);
+  backdrop-filter: blur(19px) saturate(180%);
+  border-radius: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.025);
+  display: flex;
+    /* background: rgba(0,0,0,0.01); */
+  border-radius: 10px;
+    /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); */
+  text-align: center;
+
+  .language-toggle {
+    position: absolute;
+    top: 10px;
+    left: -150px;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .language-toggle:hover {
+    background-color: #0056b3;
+  }
+}
+
+.loading {
+  padding: 50px;
+  font-size: 36px;
+  border-radius: 10px;
+  background-color: rgba(17, 25, 40, 0.9);
+}
+
+/* Mobile & Tablet */
+@media (max-width: 1023px) {
+  .hide-on-mobile {
+    display: none;
+  }
+}
+
+/* Tablet */
+@media (min-width: 740px) and (max-width: 1023px) {
+  .hide-on-tablet {
+        display: none;
+    }
+}
+
+/* Mobile */
+@media (max-width: 739px) {
+  .hide-on-mobile {
+    display: none;
+}
+}
